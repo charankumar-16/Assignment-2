@@ -1,0 +1,92 @@
+
+POST http://localhost:3000/v1/role
+Content-Type: application/json
+
+{
+  "name": "Community Moderator"
+}
+###
+
+GET http://localhost:3000/v1/role
+
+###
+
+POST http://localhost:3000/v1/auth/signup
+Content-Type: application/json
+
+{
+  "name": "charan",
+  "email": "charan165.com",
+  "password": "charan"
+}
+
+###
+
+POST http://localhost:3000/v1/auth/signin
+Content-Type: application/json
+
+{
+  "email": "charan1651.com",
+  "password": "charan"
+}
+
+###
+
+GET http://localhost:3000/v1/auth/me
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYXJhbjE2NTEuY29tIiwiaWF0IjoxNjgxNDc0OTI2fQ.2ohnpppIhhE5QCNCpsvHe6_jGquRDFnTzl5k9RSQl1c
+Content-Type: application/json
+
+###
+
+POST http://localhost:3000/v1/community
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYXJhbjE2NTEuY29tIiwiaWF0IjoxNjgxNDc0OTI2fQ.2ohnpppIhhE5QCNCpsvHe6_jGquRDFnTzl5k9RSQl1c
+Content-Type: application/json
+
+{
+  "name": "eastworlds"
+}
+
+###
+
+GET http://localhost:3000/v1/community
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYXJhbjE2NTEuY29tIiwiaWF0IjoxNjgxNDc0OTI2fQ.2ohnpppIhhE5QCNCpsvHe6_jGquRDFnTzl5k9RSQl1c
+Content-Type: application/json
+
+###
+
+
+GET http://localhost:3000/v1/community/eastworlds/members
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYXJhbjE2NTEuY29tIiwiaWF0IjoxNjgxNDc0OTI2fQ.2ohnpppIhhE5QCNCpsvHe6_jGquRDFnTzl5k9RSQl1c
+
+###
+
+GET http://localhost:3000/v1/community/me/owner
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYXJhbjE2NTEuY29tIiwiaWF0IjoxNjgxNDc0OTI2fQ.2ohnpppIhhE5QCNCpsvHe6_jGquRDFnTzl5k9RSQl1c
+
+###
+
+GET http://localhost:3000/v1/community/me/member
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYXJhbjE2NTEuY29tIiwiaWF0IjoxNjgxNDc0OTI2fQ.2ohnpppIhhE5QCNCpsvHe6_jGquRDFnTzl5k9RSQl1c
+
+###
+
+POST http://localhost:3000/v1/member
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYXJhbjE2NTEuY29tIiwiaWF0IjoxNjgxNDc0OTI2fQ.2ohnpppIhhE5QCNCpsvHe6_jGquRDFnTzl5k9RSQl1c
+Content-Type: application/json
+
+{
+  "community": "8390816290",
+  "user": "8389288576",
+  "role": "8389101096"
+  
+}
+
+###
+
+
+
+DELETE http://localhost:3000/v1/member/8389492514
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYXJhbjE2NTEuY29tIiwiaWF0IjoxNjgxNDc0OTI2fQ.2ohnpppIhhE5QCNCpsvHe6_jGquRDFnTzl5k9RSQl1c
+
+
+###
